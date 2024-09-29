@@ -1,0 +1,132 @@
+
+body{
+    background-image: url('bg.PNG');
+    background-size: 1700px;
+}
+.vl {
+    border-left: 6px solid #564757;
+    height: 1000px;
+    position: absolute;
+    left: 13%;
+    margin-left: -1px;
+    top: 0;
+}
+
+*{font-family: 'Poppins', sans-serif;}
+
+.iconP{
+    position:absolute;
+    left: 2.5%;
+    top: 2.5%;
+}
+
+
+h2{
+    color: #f9f5f7;
+        text-shadow: 
+            0 0 5px #05531f,
+            0 0 10px #85ff5f,
+            0 0 20px #24ff3e,
+            0 0 40px #00ffff;;
+    outline-width: 1px;
+    z-index: 20;
+}
+
+.lowerBound {
+    position: absolute;
+    top:82%;
+    right: 91%;
+    font-size:40px;
+    font-family: fantasy;
+    color: #f9f5f7;
+        text-shadow: 
+            0 0 5px #48003e,
+            0 0 10px #499eff,
+            0 0 20px #0cff15,
+            0 0 40px #00ffff;
+    
+}
+
+
+
+
+    
+  .tryC{
+    position: absolute;
+    top: 80%;
+     left:40%;
+      visibility: visible;
+      
+  }
+
+  .task-list-container {
+    z-index: 5; 
+    padding: 240px;
+    margin-top: 60px;
+    position: relative;
+    width: 980px;
+    top: -9%;
+    left: 15%;
+
+
+    
+}
+
+.copyTaskHidden{
+    
+    display:none;
+}
+.bgBox{
+    width: 70vw;
+    height: 65vh;
+    cursor: pointer;
+    border: 2px solid #0c0b5b;
+    border-radius: 10px;
+    position: absolute;
+    left: 22%;
+    top: 10%;
+    background-color: rgba(1, 0, 72, 0.3);
+}
+
+button{ 
+    border: none; 
+    outline: none; 
+    padding: 16px 50px; 
+    background: #e40078; 
+    color: #fff; 
+    font-size: 18px; 
+    cursor: pointer; 
+    border-radius: 40px; 
+
+}
+
+
+
+.task-checkbox {
+    transform: scale(1.5); /* Adjust the scale */
+    -webkit-transform: scale(1.5); /* For Safari */
+    margin-right: 10px; /* Space between the checkbox and the text */
+    z-index: 10; /* Ensure the checkbox is on top */
+}
+
+
+
+
+/* Progress bar styles */
+
+
+progress::-webkit-progress-bar {
+    background-color: #D3D3D3; /* Light gray background */
+}
+
+progress::-webkit-progress-value {
+    background-color: red; /* Red color for the progress */
+}
+
+
+
+progress {
+    width: 9%;
+    height: 20px; /* Adjust the height as needed */
+    border: none; /* Optional: to remove any default borders */
+}
