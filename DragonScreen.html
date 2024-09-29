@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drgn.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+</head>
+    <body>
+    
+  
+    <script src="DragonJ.js"></script>
+
+    <div class="iconP" >
+        <img src="dragon.PNG" height="150">
+    </div>
+    <h2 style="position:absolute; font-size: 22px; left:3%; top:19%; "> Pet Health:</h2>
+
+    
+    <a href = "petSelection.html">
+        <button style = "font-size: 25px; position:absolute; left: 82%; top:82%;"><b>Back</b></button>
+    </a>
+    
+    <div class="lowerBound">
+        <p> Viz </p> 
+    </div>
+   
+    <!--<button id = "AddsTask" style="font-size: 25px; position:absolute; left: 30%; top:90%; ">Add</button>-->
+    
+
+
+
+    <div class="grid-container">
+        <!-- generate the grid items dynamically using JavaScript -->
+      </div>
+
+
+    <!--VERTICAL LINE-->
+    <div class="vl"></div>
+
+    <!--ADD STUFF-->
+    <div class="tryC">
+        <div style="    color: #f9f5f7;
+        text-shadow: 
+            0 0 5px #a4008f,
+            0 0 10px #de7fd9,
+            0 0 20px #c51a92,
+            0 0 40px #f07727;" >
+            <label for="taskInput" style="font-size: 22px"><b>Task:</b></label>
+            <input type="text" id="taskInput" placeholder="Enter your task" 
+            style="border-color: #f2f2f5; border-radius: 7px; padding:5px; font-size: 22px; background-color: rgba(255, 255, 255, 0.44);
+            color: rgb(1, 1, 1);
+        border: 2px solid #fff;
+        text-shadow: 0 0 10px asrgba(233, 43, 147, 0.5),
+               0 0 20px rgba(255, 255, 255, 0.973);">
+            <br><br>
+        
+            <label for="durationInput" style="font-size: 22px"><b>Duration (minutes):</b></label>
+            <input type="number" id="durationInput" placeholder="Enter duration" 
+            style="border-color: #fafafa; border-radius: 7px; padding:5px; font-size: 22px; background-color: rgba(248, 244, 244, 0.428);">
+        </div>
+        
+
+        <button id="addTaskBtn" style="background-color: #313178;"><b>Add Task</b></button>
+
+    </div>
+
+    <!--TASK list-->
+
+   <h2 class="glow-text" style = "position:absolute; left: 25%; top:13%; ">Task List</h2>
+    <div class="task-list-container">
+        
+        <div class="copyTaskHidden">
+            <label for="tInput">Task:</label>
+            <input type="text" id="tInput" placeholder="Your task">
+            
+            <label for="nI"></label>
+            <input type="number" id="nI" placeholder="Time">
+    
+        </div>
+
+        <ul class="glow-text" id="taskList" style="font-size: 30px; border-width: 10px;">
+            <!-- Task items will appear here -->
+           
+        </ul>
+    </div>
+
+    <script>
+        $('#taskInput').keyup(function(){
+            $('#tInput').val(this.value);
+        });
+
+        $('#durationInput').keyup(function(){
+            $('#nI').val(this.value);
+        });
+    </script>
+
+    <!--make a background-->
+    <div class="bgBox">
+    </div>
+
+
+    <!--Progres BAR and its CSS-->
+    
+    <progress value ="50" max="100" id="health" style="position:absolute; top:25%; left:2%;"> </progress>
+    <!--For the NUMBER represeantion of the health progress bar-->
+    <br>
+    <span id="healthValue" style="position:absolute; top:28%; left:4%; font-size: 25px;" ><b>50/100</b></span>
+    
+
+
+    
+    </body>
+</html>
